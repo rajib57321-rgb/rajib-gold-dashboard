@@ -1,189 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rajib Gold Macro Dashboard</title>
+<title>Rajib Gold Macro Dashboard Pro</title>
 
-<style>
-body{
-margin:0;
-background:#111;
-font-family:Arial;
-color:white;
-}
-
-header{
-background:#000;
-padding:18px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
-color:gold;
-}
-
-.container{
-padding:15px;
-}
-
-.card{
-background:#222;
-border-radius:12px;
-padding:18px;
-margin-bottom:15px;
-box-shadow:0 0 10px rgba(255,215,0,.15);
-}
-
-h2{
-margin:0;
-font-size:20px;
-}
-
-.value{
-font-size:34px;
-font-weight:bold;
-margin-top:12px;
-color:gold;
-}
-
-.green{
-color:#00ff66;
-}
-
-.red{
-color:#ff4444;
-}
-
-.button{
-display:block;
-background:gold;
-color:black;
-text-align:center;
-padding:14px;
-margin-top:10px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.footer{
-text-align:center;
-color:#aaa;
-padding:20px;
-font-size:14px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <header>
-Rajib Gold Macro Dashboard
+
+<h1>🏆 Rajib Gold Macro Dashboard PRO</h1>
+
+<p>Live Gold • DXY • Treasury Yields • Fed • AI Macro Analysis</p>
+
 </header>
 
 <div class="container">
 
+<!-- GOLD -->
+
 <div class="card">
+
 <h2>🟨 Gold (XAU/USD)</h2>
-<div class="value">Loading...</div>
+
+<div id="gold" class="price">
+Loading...
 </div>
 
-<div class="card">
-<h2>💵 DXY</h2>
-<div class="value">Loading...</div>
+<div id="goldChange" class="change">
+Waiting...
 </div>
 
+</div>
+
+<!-- DXY -->
+
 <div class="card">
+
+<h2>💵 US Dollar Index (DXY)</h2>
+
+<div id="dxy" class="price">
+
+Loading...
+
+</div>
+
+<div id="dxyTrend">
+
+Waiting...
+
+</div>
+
+</div>
+
+<!-- 2Y -->
+
+<div class="card">
+
 <h2>📈 US 2-Year Yield</h2>
-<div class="value">Loading...</div>
+
+<div id="y2" class="price">
+
+Loading...
+
 </div>
 
+</div>
+
+<!-- 10Y -->
+
 <div class="card">
+
 <h2>📈 US 10-Year Yield</h2>
-<div class="value">Loading...</div>
+
+<div id="y10" class="price">
+
+Loading...
+
 </div>
 
+</div>
+
+<!-- 20Y -->
+
 <div class="card">
+
 <h2>📈 US 20-Year Yield</h2>
-<div class="value">Loading...</div>
+
+<div id="y20" class="price">
+
+Loading...
+
 </div>
 
+</div>
+
+<!-- FEDWATCH -->
+
 <div class="card">
-<h2>🏦 CME FedWatch</h2>
-<div class="value green">
-81.2% Hold
+
+<h2>🏛 CME FedWatch</h2>
+
+<div id="fedwatch" class="price">
+
+Loading...
+
 </div>
 
 <a class="button"
 href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
 target="_blank">
+
 Open FedWatch
+
 </a>
 
 </div>
 
-<div class="card">
-<h2>📅 Economic Calendar</h2>
-
-<a class="button"
-href="https://www.forexfactory.com/calendar"
-target="_blank">
-Open Forex Factory
-</a>
-
-</div>
+<!-- AI -->
 
 <div class="card">
 
 <h2>🤖 AI Gold Bias</h2>
 
-<div class="value green">
-Bullish
-</div>
+<div id="bias" class="price">
 
-<p>
-
-✔ DXY Weak<br>
-
-✔ Bond Yields Falling<br>
-
-✔ Fed Expectations Support Gold<br>
-
-✔ Trend = Higher High & Higher Low
-
-</p>
+Calculating...
 
 </div>
+
+<ul>
+
+<li id="signal1">Loading...</li>
+
+<li id="signal2">Loading...</li>
+
+<li id="signal3">Loading...</li>
+
+<li id="signal4">Loading...</li>
+
+</ul>
+
+</div>
+
+<!-- NEWS -->
 
 <div class="card">
 
-<h2>⚠ Next High Impact Event</h2>
+<h2>📅 Next High Impact Event</h2>
 
-<div class="value">
+<div id="newsTitle">
 
 FOMC
 
 </div>
 
-<p>
+<div id="newsTime">
 
-29 July<br>
-
-23:30 IST
-
-</p>
+Loading...
 
 </div>
 
 </div>
 
-<div class="footer">
-
-Rajib Gold Macro Dashboard v2
-
 </div>
+
+<footer>
+
+Rajib Gold Macro Dashboard Pro v3
+
+</footer>
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
