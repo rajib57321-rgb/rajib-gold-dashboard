@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "ee4e806a046c448181863707882b884e";
 
 async function getQuote(symbol, elementId) {
   try {
