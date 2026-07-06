@@ -21,7 +21,19 @@ async function getQuote(symbol, elementId) {
 
 function updateDashboard() {
   getQuote("XAU/USD", "gold");
-  getDXY();;
+  async function getDXY() {
+  try {
+    const response = await fetch("https://api.allorigins.win/raw?url=https://stooq.com/q/l/?s=dx.f&f=sd2t2ohlcv&h&e=csv");
+    const text = await response.text();
+
+    const lines = text.split("\n");
+    const cols = lines[1].split(",");
+
+    document.getElementById("dxy").innerHTML = cols[6];
+  } catch (e) {
+    document.getElementById("dxy").innerHTML = "N/A";
+  }
+  }
 }
 
 updateDashboard();
