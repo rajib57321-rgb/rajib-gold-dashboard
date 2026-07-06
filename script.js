@@ -21,7 +21,7 @@ async function getQuote(symbol, elementId) {
 
 function updateDashboard() {
   getQuote("XAU/USD", "gold");
-  getQuote("DXY", "DXY");
+  getDXY();;
 }
 
 updateDashboard();
