@@ -8,8 +8,7 @@ const API_KEY = "ee4e806a046c448181863707882b884e";
 // Gold
 async function getGold() {
     try {
-        const res = await fetch(
-            `https://api.twelvedata.com/price?symbol=XAU/USD&apikey=${API_KEY}`
+        const res = await fetch(`https://api.twelvedata.com/price?symbol=XAU%2FUSD&apikey=${API_KEY}`);
         );
 
         const data = await res.json();
