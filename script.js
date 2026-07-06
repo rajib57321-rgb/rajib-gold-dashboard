@@ -3,7 +3,7 @@ const API_KEY = "ee4e806a046c448181863707882b884e";
 async function getQuote(symbol, elementId) {
   try {
     const response = await fetch(
-      `https://api.twelvedata.com/price?symbol=${symbol}&apikey=${API_KEY}`
+      `https://api.twelvedata.com/price?symbol=${symbol}&apikey=${ee4e806a046c448181863707882b884e}`
     );
     const data = await response.json();
 
